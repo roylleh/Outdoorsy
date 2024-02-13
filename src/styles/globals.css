@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.pokemon-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  grid-template-rows: repeat(5, 20%);
+  margin-bottom: 50px;
+}
+
+.pokemon-grid button {
+  border: 1px black solid;
+}
+
+.pokemon-grid .previous {
+  grid-column-start: 2;
+}
+
+.pokemon-grid .next {
+  grid-column-start: 3;
+}
+
+.pokemon-entry {
+  padding: 50px;
+}
